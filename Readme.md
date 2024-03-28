@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ваня Бурмистенко](https://up.htmlacademy.ru/htmlcss-individual/1/user/2475311).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
