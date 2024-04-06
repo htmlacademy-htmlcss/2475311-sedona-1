@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sedona catalog</title>
+    <!--
+      <link href="css/style.css" rel="stylesheet">
+      -->
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="logo">
+        <a><img src="img/frame-19.png" class="logo" alt="сity of Sedona" width="140" height="70"></a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="#" class="main-nav-link">Главная</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#" class="main-nav-link">О Седоне</a>
+          </li>
+          <li class="main-nav-item">
+            <a href=/catalog.html class="main-nav-link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-area">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search">
+          <button type="submit">Search</button>
+        </form>
+        <button type="button" name="likes" class="favorites"><span>Likes</span></button>
+        <button type="button" name="want-here" class="want-here">Хочу сюда!</button>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="catalog-welcome">
+        <img src="img/index-background.jpg" class="catalog-welcome-bg" alt="preview-backgroung" width="1200px" height="485px" >
+        <img src="img/welcome.svg" class="catalog-welcome-text" alt="welcome-text">
+        <img src="img/divider.png" class="catalog-welcome-footer" alt="welcome-footer">
+      </section>
+      <!--
+Пока не понимаю, как прописать код ниже
+      -->
+        <div>
+        <h1>Гостиницы Седоны</h1>
+        <p>Гостинницы</p>
+
+        <div>
+          <h3>Инфраструктура:</h3>
+          <ul>
+            <li>Бассеин</li>
+            <li>парковка</li>
+            <li>WI-FI</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Тип Жилья:</h3>
+          <ul>
+            <li>Гостинница</li>
+            <li>Мотель</li>
+            <li>Апартаменты</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Стоимость, ₽:</p>
+        </div>
+        <div>
+          <p>Применить</p>
+          <p>сбросить</p>
+        </div>
+      </div>
+
+      <div>
+        <p>Найдено гостиниц: 38</p>
+        <p>Сначала дешевые</p>
+      </div>
+
+      <section class="hotels">
+        <ul class="hotels-list">
+          <li class="hotels-card">
+            <section>
+              <div class="img-wrap"><img src="img/hotel-1.jpg" alt="Amara resort"></div>
+              <h3>Amara Resort & Spa</h3>
+              <div class="card-info">
+                <p>
+                  <span>Гостиница</span>
+                  <span>От 4000</span>
+                </p>
+                <p>
+                  <a href="#">Подробней</a>
+                  <button type="button">В избранное</button>
+                </p>
+                <p>
+                  <span class="stars">stars</span>
+                  <span class="rating">rating</span>
+                </p>
+              </div>
+            </section>
+          </li>
+
+
+
+          <li class="hotels-card">
+            <section>
+              <div class="img-wrap"><img src="img/hotel-2.jpg" alt="Villas at Poco Diablo"></div>
+              <h3>Villas at Poco Diablo</h3>
+              <div>
+                <p>
+                  <span>Гостинница</span>
+                  <span>От 5000</span>
+                </p>
+                <p>
+                  <a href="#">Подробней</a>
+                  <button type="button">В избранное</button>
+                </p>
+                <p>
+                  <span class="stars">stars</span>
+                  <span class="rating">rating</span>
+                </p>
+              </div>
+            </section>
+          </li>
+
+          <li class="hotels-card">
+            <section>
+              <div class="img-wrap"><img src="img/hotel-3.jpg" alt="Desert Quail Inn"></div>
+              <h3>Desert Quail Inn</h3>
+              <div>
+                <p>
+                  <span>Гостинница</span>
+                  <span>От 2500</span>
+                </p>
+                <p>
+                  <a href="#">Подробней</a>
+                  <button type="button">В избранное</button>
+                </p>
+                <p>
+                  <span class="stars">stars</span>
+                  <span class="rating">rating</span>
+                </p>
+              </div>
+            </section>
+          </li>
+
+          <li class="hotels-card">
+            <section>
+              <div class="img-wrap"><img src="img/hotel-4.jpg" alt="GreenTree Inn"></div>
+              <h3>GreenTree Inn</h3>
+              <div>
+                <p>
+                  <span>Гостинница</span>
+                  <span>От 1500</span>
+                </p>
+                <p>
+                  <a href="#">Подробней</a>
+                  <button type="button">В избранное</button>
+                </p>
+                <p>
+                  <span class="stars">stars</span>
+                  <span class="rating">rating</span>
+                </p>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-list-item"><a class="active">1</a></li>
+          <li class="pagination-list-item"><a href="#">2</a></li>
+          <li class="pagination-list-item"><a href="#">3</a></li>
+          <li class="pagination-list-item"><a href="#">4</a></li>
+          <li class="pagination-list-item">...</li>
+          <li class="pagination-list-item"><a href="#">10</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="social">
+        <a href="https://vk.com/htmlacademy" target="_blank"> <img src="img/social-vk.svg"  alt="VK"> </a>
+        <a href=" https://t.me/htmlacademy" target="_blank" > <img src="img/social-telegram.svg" alt="telegram"> </a>
+        <a href="https://www.youtube.com/user/htmlacademru" target="_blank"> <img src="img/social-youtube.svg" alt="youtube" > </a>
+      </div>
+      <div class="number">
+        <p>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </p>
+      </div>
+      <a href="https://htmlacademy.ru" target="_blank">
+        <div><img src="img/logo-htmlacademy.svg" class="HTML academy" alt="htmlacademy"></div>
+      </a>
+    </footer>
+  </body>
+</html>
