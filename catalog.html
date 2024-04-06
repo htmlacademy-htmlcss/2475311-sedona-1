@@ -14,17 +14,19 @@
 
   <body>
     <header class="page-header">
-      <div><img src="img/frame-19.png" class="logo" alt="сity of Sedona" width="140" height="70"></div>
+      <div class="logo">
+        <a><img src="img/frame-19.png" class="logo" alt="сity of Sedona" width="140" height="70"></a>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
-            <a href="/index.html" class="nav-link">Главная</a>
+          <li class="main-nav-item">
+            <a href="#" class="main-nav-link">Главная</a>
           </li>
-          <li>
-            <a href="#" class="nav-link">О Седоне</a>
+          <li class="main-nav-item">
+            <a href="#" class="main-nav-link">О Седоне</a>
           </li>
-          <li>
-            <a href=/catalog.html class="nav-link">Гостиницы</a>
+          <li class="main-nav-item">
+            <a href=/catalog.html class="main-nav-link">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -34,16 +36,16 @@
           <input type="search" name="search">
           <button type="submit">Search</button>
         </form>
-        <button type="button" name="Likes" class="favorites"><span>Likes</span></button>
+        <button type="button" name="likes" class="favorites"><span>Likes</span></button>
         <button type="button" name="want-here" class="want-here">Хочу сюда!</button>
       </div>
     </header>
 
     <main class="page-content">
-      <section class="welcome">
-        <img src="img/index-background.jpg" class="welcome-bg" alt="preview-backgroung" width="1200px" height="485px" >
-        <img src="img/welcome.svg" class="welcome-text" alt="welcome-text">
-        <img src="img/divider.png" class="welcome-footer" alt="welcome-footer">
+      <section class="catalog-welcome">
+        <img src="img/index-background.jpg" class="catalog-welcome-bg" alt="preview-backgroung" width="1200px" height="485px" >
+        <img src="img/welcome.svg" class="catalog-welcome-text" alt="welcome-text">
+        <img src="img/divider.png" class="catalog-welcome-footer" alt="welcome-footer">
       </section>
       <!--
 Пока не понимаю, как прописать код ниже
@@ -109,7 +111,7 @@
 
 
 
-      <li class="hotels-card">
+          <li class="hotels-card">
             <section>
               <div class="img-wrap"><img src="img/hotel-2.jpg" alt="Villas at Poco Diablo"></div>
               <h3>Villas at Poco Diablo</h3>
@@ -128,9 +130,9 @@
                 </p>
               </div>
             </section>
-       </li>
+          </li>
 
-      <li class="hotels-card">
+          <li class="hotels-card">
             <section>
               <div class="img-wrap"><img src="img/hotel-3.jpg" alt="Desert Quail Inn"></div>
               <h3>Desert Quail Inn</h3>
@@ -149,9 +151,9 @@
                 </p>
               </div>
             </section>
-       </li>
+          </li>
 
-      <li class="hotels-card">
+          <li class="hotels-card">
             <section>
               <div class="img-wrap"><img src="img/hotel-4.jpg" alt="GreenTree Inn"></div>
               <h3>GreenTree Inn</h3>
@@ -170,17 +172,17 @@
                 </p>
               </div>
             </section>
-       </li>
+          </li>
         </ul>
       </section>
 
       <section class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-list-item"><a href="#">1</a></li>
+          <li class="pagination-list-item"><a class="active">1</a></li>
           <li class="pagination-list-item"><a href="#">2</a></li>
           <li class="pagination-list-item"><a href="#">3</a></li>
           <li class="pagination-list-item"><a href="#">4</a></li>
-          <li class="pagination-list-item"><a>...</a></li>
+          <li class="pagination-list-item">...</li>
           <li class="pagination-list-item"><a href="#">10</a></li>
         </ul>
       </section>
