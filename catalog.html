@@ -49,32 +49,32 @@
       <!--
 Пока не понимаю, как прописать код ниже
       -->
-      <div class="inner-catalog">
+
         <section class="inner-header">
           <h1 class="inner-title">Гостиницы Седоны</h1>
-          <ol class="breadcrumbs">
+          <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link-home" href="index.html">
+              <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">На главную.</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
-          </ol>
-        </section>
+          </ul>
 
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Бассейн</span>
-                </label>
-              </li>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
+                </li>
+
 
               <li class="catalog-filter-item">
                 <label class="control">
@@ -140,10 +140,10 @@
 
               <div class="range-scale">
                 <div class="range-bar">
-                  <button class="range-toggle toggle-min" type="button">
+                  <button class="range-toggle toggle-min" type="button" name="toggle min">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max" type="button">
+                  <button class="range-toggle toggle-max" type="button" name="toogle max">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
@@ -152,11 +152,11 @@
           </fieldset>
 
           <div class="catalog-buttons">
-            <button class="catalog-apply" type="submit">Применить</button>
-            <button class="catalog-reset" type="reset">Сбросить</button>
+            <button class="catalog-apply" type="submit" name="catalog-apply">Применить</button>
+            <button class="catalog-reset" type="reset" name="catalog-reset">Сбросить</button>
           </div>
-        </form>
-      </div>
+         </form>
+        </section>
 
       <section class="hotels">
         <ul class="hotels-list">
@@ -171,7 +171,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -194,7 +194,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -215,7 +215,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -236,7 +236,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -266,7 +266,7 @@
         <a href=" https://t.me/htmlacademy" target="_blank" > <img src="img/social-telegram.svg" alt="telegram"> </a>
         <a href="https://www.youtube.com/user/htmlacademru" target="_blank"> <img src="img/social-youtube.svg" alt="youtube" > </a>
       </div>
-      <div class="number">
+      <div class="phone">
         <p>
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </p>
