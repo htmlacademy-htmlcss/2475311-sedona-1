@@ -7,20 +7,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Sedona catalog</title>
-    <!--
-      <link href="css/style.css" rel="stylesheet">
-      -->
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header class="page-header">
+  <body class="page">
+    <div class="container">
+     <header class="page-header">
       <div class="logo">
-        <a><img src="img/frame-19.png" class="logo" alt="сity of Sedona" width="140" height="70"></a>
+        <a><img src="img/logo-header.png" class="logo" alt="сity of Sedona" width="140" height="70"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-item">
-            <a href="#" class="main-nav-link">Главная</a>
+            <a href="/" class="main-nav-link">Главная</a>
           </li>
           <li class="main-nav-item">
             <a href="#" class="main-nav-link">О Седоне</a>
@@ -39,9 +38,9 @@
         <button type="button" name="likes" class="favorites"><span>Likes</span></button>
         <button type="button" name="want-here" class="want-here">Хочу сюда!</button>
       </div>
-    </header>
+     </header>
 
-    <main class="page-content">
+     <main class="page-content">
       <section class="catalog-welcome">
         <img src="img/index-background.jpg" class="catalog-welcome-bg" alt="preview-backgroung" width="1200px" height="485px" >
         <img src="img/welcome.svg" class="catalog-welcome-text" alt="welcome-text">
@@ -50,41 +49,114 @@
       <!--
 Пока не понимаю, как прописать код ниже
       -->
-        <div>
-        <h1>Гостиницы Седоны</h1>
-        <p>Гостинницы</p>
 
-        <div>
-          <h3>Инфраструктура:</h3>
-          <ul>
-            <li>Бассеин</li>
-            <li>парковка</li>
-            <li>WI-FI</li>
+        <section class="inner-header">
+          <h1 class="inner-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">На главную.</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
           </ul>
-        </div>
 
-        <div>
-          <h3>Тип Жилья:</h3>
-          <ul>
-            <li>Гостинница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
-          </ul>
-        </div>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
+                </li>
 
-        <div>
-          <p>Стоимость, ₽:</p>
-        </div>
-        <div>
-          <p>Применить</p>
-          <p>сбросить</p>
-        </div>
-      </div>
 
-      <div>
-        <p>Найдено гостиниц: 38</p>
-        <p>Сначала дешевые</p>
-      </div>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="apartaments">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group-price">
+            <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="catalog-max" type="number" name="max-sum" value="0">
+                  <span class="from-to">от</span>
+                </label>
+
+                <label class="catalog-filter-label">
+                  <input class="catalog-min" type="number" name="min-sum" value="9000">
+                  <span class="from-to">до</span>
+                </label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button" name="toggle min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button" name="toogle max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="catalog-buttons">
+            <button class="catalog-apply" type="submit" name="catalog-apply">Применить</button>
+            <button class="catalog-reset" type="reset" name="catalog-reset">Сбросить</button>
+          </div>
+         </form>
+        </section>
 
       <section class="hotels">
         <ul class="hotels-list">
@@ -99,7 +171,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -122,7 +194,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -143,7 +215,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -164,7 +236,7 @@
                 </p>
                 <p>
                   <a href="#">Подробней</a>
-                  <button type="button">В избранное</button>
+                  <button type="button" name="favorite">В избранное</button>
                 </p>
                 <p>
                   <span class="stars">stars</span>
@@ -186,15 +258,15 @@
           <li class="pagination-list-item"><a href="#">10</a></li>
         </ul>
       </section>
-    </main>
+     </main>
 
-    <footer class="page-footer">
+     <footer class="page-footer">
       <div class="social">
         <a href="https://vk.com/htmlacademy" target="_blank"> <img src="img/social-vk.svg"  alt="VK"> </a>
         <a href=" https://t.me/htmlacademy" target="_blank" > <img src="img/social-telegram.svg" alt="telegram"> </a>
         <a href="https://www.youtube.com/user/htmlacademru" target="_blank"> <img src="img/social-youtube.svg" alt="youtube" > </a>
       </div>
-      <div class="number">
+      <div class="phone">
         <p>
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </p>
@@ -202,6 +274,7 @@
       <a href="https://htmlacademy.ru" target="_blank">
         <div><img src="img/logo-htmlacademy.svg" class="HTML academy" alt="htmlacademy"></div>
       </a>
-    </footer>
+     </footer>
+    </div>
   </body>
 </html>
